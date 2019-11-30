@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E30D8173-256F-4E40-92F7-D209151FCB0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SpyNote_V6._4.My.MyApplication</StartupObject>
+    <RootNamespace>SpyNote_V6._4</RootNamespace>
+    <AssemblyName>SpyNote V6.4</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SpyNote V6.4.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SpyNote V6.4.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CoreAudioApi">
+      <HintPath>..\..\PT\PT\CoreAudioApi.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="SN\AboutSpyNote.Designer.vb">
+      <DependentUpon>AboutSpyNote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\AboutSpyNote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\AccountManager.Designer.vb">
+      <DependentUpon>AccountManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\AccountManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\AddFiles.Designer.vb">
+      <DependentUpon>AddFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\AddFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\Apps.Designer.vb">
+      <DependentUpon>Apps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\Apps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\aProperties.Designer.vb">
+      <DependentUpon>aProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\aProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\Bloom55546.vb" />
+    <Compile Include="SN\Build.Designer.vb">
+      <DependentUpon>Build.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\Build.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\CallPhone.Designer.vb">
+      <DependentUpon>CallPhone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\CallPhone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\CallsManager.Designer.vb">
+      <DependentUpon>CallsManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\CallsManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\CameraManager.Designer.vb">
+      <DependentUpon>CameraManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\CameraManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\Chat.Designer.vb">
+      <DependentUpon>Chat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\Chat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\ContactsManager.Designer.vb">
+      <DependentUpon>ContactsManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\ContactsManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\ContactsWrite.Designer.vb">
+      <DependentUpon>ContactsWrite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\ContactsWrite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\Data.vb" />
+    <Compile Include="SN\devices.Designer.vb">
+      <DependentUpon>devices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\devices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\DownloadManager.Designer.vb">
+      <DependentUpon>DownloadManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\DownloadManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\Draw.vb" />
+    <Compile Include="SN\DrawCounter.vb" />
+    <Compile Include="SN\DrewTabControl.vb" />
+    <Compile Include="SN\FileBox.Designer.vb">
+      <DependentUpon>FileBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\FileBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\File_Manager.Designer.vb">
+      <DependentUpon>File_Manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\File_Manager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\fOptions.Designer.vb">
+      <DependentUpon>fOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\fOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\FSettings.Designer.vb">
+      <DependentUpon>FSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\FSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\FUN.Designer.vb">
+      <DependentUpon>FUN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\FUN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\genr.vb" />
+    <Compile Include="SN\GeoIP.vb" />
+    <Compile Include="SN\GetCountryName.vb" />
+    <Compile Include="SN\GetFlagThisIp.vb" />
+    <Compile Include="SN\Google.vb" />
+    <Compile Include="SN\JV.Designer.vb">
+      <DependentUpon>JV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\JV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\key_logger.Designer.vb">
+      <DependentUpon>key_logger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\key_logger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\LinearLine.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SN\LocationManager.Designer.vb">
+      <DependentUpon>LocationManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\LocationManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\LogoSN.Designer.vb">
+      <DependentUpon>LogoSN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\LogoSN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\MainSpyNote.Designer.vb">
+      <DependentUpon>MainSpyNote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\MainSpyNote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\Microphone.Designer.vb">
+      <DependentUpon>Microphone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\Microphone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\NameChat.Designer.vb">
+      <DependentUpon>NameChat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\NameChat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\Notepad.Designer.vb">
+      <DependentUpon>Notepad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\Notepad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\Notice1.Designer.vb">
+      <DependentUpon>Notice1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\Notice1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\OpenPort.Designer.vb">
+      <DependentUpon>OpenPort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\OpenPort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\PassData.vb" />
+    <Compile Include="SN\PI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\PrecisionTimer.vb" />
+    <Compile Include="SN\REhost.Designer.vb">
+      <DependentUpon>REhost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\REhost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\restPass.Designer.vb">
+      <DependentUpon>restPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\restPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\RoundRectangle.vb" />
+    <Compile Include="SN\SelectPort.Designer.vb">
+      <DependentUpon>SelectPort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\SelectPort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\SMSManager.Designer.vb">
+      <DependentUpon>SMSManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\SMSManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\Sockets.SpyNote.Client\SocketClient.vb" />
+    <Compile Include="SN\Sockets.SpyNote.Server\SocketServer.vb" />
+    <Compile Include="SN\Spell.Designer.vb">
+      <DependentUpon>Spell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\Spell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\SpyNote.Stores\ContextGriedView.vb" />
+    <Compile Include="SN\SpyNote.Stores\ContextRicBox.vb" />
+    <Compile Include="SN\SpyNote.Stores\ContextTextView.vb" />
+    <Compile Include="SN\SpyNote.Stores\CPU.vb" />
+    <Compile Include="SN\SpyNote.Stores\libIcons.vb" />
+    <Compile Include="SN\SpyNote.Stores\NetworkBandwidth.vb" />
+    <Compile Include="SN\SpyNote.Stores\SampleAudioAPI.vb" />
+    <Compile Include="SN\SpyNote.Stores\Store.vb" />
+    <Compile Include="SN\SPYXml\XMLSettings.vb" />
+    <Compile Include="SN\Terminal.Designer.vb">
+      <DependentUpon>Terminal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\Terminal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\Testconnection.Designer.vb">
+      <DependentUpon>Testconnection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\Testconnection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeBtnBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeButtonImge.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeChDown.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeCoBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeContainer546546.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeControl0.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeProgressBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeSeparator.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeShare46546.vb" />
+    <Compile Include="SN\ThemeTabControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeTit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\ThemeToolStrip.vb" />
+    <Compile Include="SN\ThemeToolStripCmbx.vb" />
+    <Compile Include="SN\ToolTip_0.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\Track.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\VisualStudioHorizontalScrollBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\VisualStudioVerticalScrollBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SN\WindowsApi.vb" />
+    <Compile Include="SN\ZipFiles.Designer.vb">
+      <DependentUpon>ZipFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SN\ZipFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\AboutSpyNote.resx">
+      <DependentUpon>AboutSpyNote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\AccountManager.resx">
+      <DependentUpon>AccountManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\AddFiles.resx">
+      <DependentUpon>AddFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\Apps.resx">
+      <DependentUpon>Apps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\aProperties.resx">
+      <DependentUpon>aProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\Build.resx">
+      <DependentUpon>Build.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\CallPhone.resx">
+      <DependentUpon>CallPhone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\CallsManager.resx">
+      <DependentUpon>CallsManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\CameraManager.resx">
+      <DependentUpon>CameraManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\Chat.resx">
+      <DependentUpon>Chat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\ContactsManager.resx">
+      <DependentUpon>ContactsManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\ContactsWrite.resx">
+      <DependentUpon>ContactsWrite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\devices.resx">
+      <DependentUpon>devices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\DownloadManager.resx">
+      <DependentUpon>DownloadManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\FileBox.resx">
+      <DependentUpon>FileBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\File_Manager.resx">
+      <DependentUpon>File_Manager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\fOptions.resx">
+      <DependentUpon>fOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\FSettings.resx">
+      <DependentUpon>FSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\FUN.resx">
+      <DependentUpon>FUN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\JV.resx">
+      <DependentUpon>JV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\key_logger.resx">
+      <DependentUpon>key_logger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\LocationManager.resx">
+      <DependentUpon>LocationManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\LogoSN.resx">
+      <DependentUpon>LogoSN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\MainSpyNote.resx">
+      <DependentUpon>MainSpyNote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\Microphone.resx">
+      <DependentUpon>Microphone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\NameChat.resx">
+      <DependentUpon>NameChat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\Notepad.resx">
+      <DependentUpon>Notepad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\Notice1.resx">
+      <DependentUpon>Notice1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\OpenPort.resx">
+      <DependentUpon>OpenPort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\REhost.resx">
+      <DependentUpon>REhost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\restPass.resx">
+      <DependentUpon>restPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\SelectPort.resx">
+      <DependentUpon>SelectPort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\SMSManager.resx">
+      <DependentUpon>SMSManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\Spell.resx">
+      <DependentUpon>Spell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\Terminal.resx">
+      <DependentUpon>Terminal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\Testconnection.resx">
+      <DependentUpon>Testconnection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SN\ZipFiles.resx">
+      <DependentUpon>ZipFiles.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aBitmap.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ANUN.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
