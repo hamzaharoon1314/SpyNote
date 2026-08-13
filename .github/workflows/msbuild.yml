@@ -2,9 +2,9 @@ name: Build and Check Errors
 
 on:
   push:
-    branches: [ "master", "main" ]
+    branches: [ "main", "dev" ]
   pull_request:
-    branches: [ "master", "main" ]
+    branches: [ "main", "dev" ]
   workflow_dispatch:
 
 jobs:
