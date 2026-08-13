@@ -1,0 +1,29 @@
+name: Build and Check Errors
+
+on:
+  push:
+    branches: [ "master", "main" ]
+  pull_request:
+    branches: [ "master", "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+
+    - name: Restore NuGet packages
+      working-directory: "SpyNote V6.4 Source/SpyNote V6.4"
+      run: nuget restore "SpyNote V6.4.sln"
+
+    - name: Build the Application
+      working-directory: "SpyNote V6.4 Source/SpyNote V6.4"
+      run: msbuild "SpyNote V6.4.sln" -t:rebuild -property:Configuration=Release
