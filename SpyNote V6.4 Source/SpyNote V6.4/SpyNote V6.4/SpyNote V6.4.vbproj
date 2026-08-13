@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -81,143 +81,143 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="SN\AboutSpyNote.Designer.vb">
+    <Compile Include="Views\Main\AboutSpyNote.Designer.vb">
       <DependentUpon>AboutSpyNote.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\AboutSpyNote.vb">
+    <Compile Include="Views\Main\AboutSpyNote.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\AccountManager.Designer.vb">
+    <Compile Include="Views\Features\AccountManager.Designer.vb">
       <DependentUpon>AccountManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\AccountManager.vb">
+    <Compile Include="Views\Features\AccountManager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\AddFiles.Designer.vb">
+    <Compile Include="Views\Dialogs\AddFiles.Designer.vb">
       <DependentUpon>AddFiles.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\AddFiles.vb">
+    <Compile Include="Views\Dialogs\AddFiles.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\Apps.Designer.vb">
+    <Compile Include="Views\Features\Apps.Designer.vb">
       <DependentUpon>Apps.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\Apps.vb">
+    <Compile Include="Views\Features\Apps.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\aProperties.Designer.vb">
+    <Compile Include="Views\Dialogs\aProperties.Designer.vb">
       <DependentUpon>aProperties.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\aProperties.vb">
+    <Compile Include="Views\Dialogs\aProperties.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\Bloom55546.vb" />
-    <Compile Include="SN\Build.Designer.vb">
+    <Compile Include="UI\Themes\Bloom55546.vb" />
+    <Compile Include="Views\Features\Build.Designer.vb">
       <DependentUpon>Build.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\Build.vb">
+    <Compile Include="Views\Features\Build.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\CallPhone.Designer.vb">
+    <Compile Include="Views\Features\CallPhone.Designer.vb">
       <DependentUpon>CallPhone.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\CallPhone.vb">
+    <Compile Include="Views\Features\CallPhone.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\CallsManager.Designer.vb">
+    <Compile Include="Views\Features\CallsManager.Designer.vb">
       <DependentUpon>CallsManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\CallsManager.vb">
+    <Compile Include="Views\Features\CallsManager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\CameraManager.Designer.vb">
+    <Compile Include="Views\Features\CameraManager.Designer.vb">
       <DependentUpon>CameraManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\CameraManager.vb">
+    <Compile Include="Views\Features\CameraManager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\Chat.Designer.vb">
+    <Compile Include="Views\Features\Chat.Designer.vb">
       <DependentUpon>Chat.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\Chat.vb">
+    <Compile Include="Views\Features\Chat.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\ContactsManager.Designer.vb">
+    <Compile Include="Views\Features\ContactsManager.Designer.vb">
       <DependentUpon>ContactsManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\ContactsManager.vb">
+    <Compile Include="Views\Features\ContactsManager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\ContactsWrite.Designer.vb">
+    <Compile Include="Views\Features\ContactsWrite.Designer.vb">
       <DependentUpon>ContactsWrite.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\ContactsWrite.vb">
+    <Compile Include="Views\Features\ContactsWrite.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\Data.vb" />
-    <Compile Include="SN\devices.Designer.vb">
+    <Compile Include="Models\Data.vb" />
+    <Compile Include="Views\Features\devices.Designer.vb">
       <DependentUpon>devices.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\devices.vb">
+    <Compile Include="Views\Features\devices.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\DownloadManager.Designer.vb">
+    <Compile Include="Views\Features\DownloadManager.Designer.vb">
       <DependentUpon>DownloadManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\DownloadManager.vb">
+    <Compile Include="Views\Features\DownloadManager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\Draw.vb" />
-    <Compile Include="SN\DrawCounter.vb" />
-    <Compile Include="SN\DrewTabControl.vb" />
-    <Compile Include="SN\FileBox.Designer.vb">
+    <Compile Include="UI\Rendering\Draw.vb" />
+    <Compile Include="UI\Rendering\DrawCounter.vb" />
+    <Compile Include="UI\Controls\DrewTabControl.vb" />
+    <Compile Include="Views\Features\FileBox.Designer.vb">
       <DependentUpon>FileBox.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\FileBox.vb">
+    <Compile Include="Views\Features\FileBox.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\File_Manager.Designer.vb">
+    <Compile Include="Views\Features\File_Manager.Designer.vb">
       <DependentUpon>File_Manager.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\File_Manager.vb">
+    <Compile Include="Views\Features\File_Manager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\fOptions.Designer.vb">
+    <Compile Include="Views\Dialogs\fOptions.Designer.vb">
       <DependentUpon>fOptions.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\fOptions.vb">
+    <Compile Include="Views\Dialogs\fOptions.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\FSettings.Designer.vb">
+    <Compile Include="Views\Dialogs\FSettings.Designer.vb">
       <DependentUpon>FSettings.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\FSettings.vb">
+    <Compile Include="Views\Dialogs\FSettings.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\FUN.Designer.vb">
+    <Compile Include="Views\Features\FUN.Designer.vb">
       <DependentUpon>FUN.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\FUN.vb">
+    <Compile Include="Views\Features\FUN.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\genr.vb" />
-    <Compile Include="SN\GeoIP.vb" />
-    <Compile Include="SN\GetCountryName.vb" />
-    <Compile Include="SN\GetFlagThisIp.vb" />
-    <Compile Include="SN\Google.vb" />
-    <Compile Include="SN\JV.Designer.vb">
+    <Compile Include="Models\genr.vb" />
+    <Compile Include="Utils\GeoIP.vb" />
+    <Compile Include="Utils\GetCountryName.vb" />
+    <Compile Include="Utils\GetFlagThisIp.vb" />
+    <Compile Include="Utils\Google.vb" />
+    <Compile Include="Views\Features\JV.Designer.vb">
       <DependentUpon>JV.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\JV.vb">
+    <Compile Include="Views\Features\JV.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\key_logger.Designer.vb">
+    <Compile Include="Views\Features\key_logger.Designer.vb">
       <DependentUpon>key_logger.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\key_logger.vb">
+    <Compile Include="Views\Features\key_logger.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\LinearLine.vb">
+    <Compile Include="UI\Controls\LinearLine.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -235,172 +235,172 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="SN\LocationManager.Designer.vb">
+    <Compile Include="Views\Features\LocationManager.Designer.vb">
       <DependentUpon>LocationManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\LocationManager.vb">
+    <Compile Include="Views\Features\LocationManager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\LogoSN.Designer.vb">
+    <Compile Include="Views\Dialogs\LogoSN.Designer.vb">
       <DependentUpon>LogoSN.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\LogoSN.vb">
+    <Compile Include="Views\Dialogs\LogoSN.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\MainSpyNote.Designer.vb">
+    <Compile Include="Views\Main\MainSpyNote.Designer.vb">
       <DependentUpon>MainSpyNote.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\MainSpyNote.vb">
+    <Compile Include="Views\Main\MainSpyNote.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\Microphone.Designer.vb">
+    <Compile Include="Views\Features\Microphone.Designer.vb">
       <DependentUpon>Microphone.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\Microphone.vb">
+    <Compile Include="Views\Features\Microphone.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\NameChat.Designer.vb">
+    <Compile Include="Views\Features\NameChat.Designer.vb">
       <DependentUpon>NameChat.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\NameChat.vb">
+    <Compile Include="Views\Features\NameChat.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\Notepad.Designer.vb">
+    <Compile Include="Views\Features\Notepad.Designer.vb">
       <DependentUpon>Notepad.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\Notepad.vb">
+    <Compile Include="Views\Features\Notepad.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\Notice1.Designer.vb">
+    <Compile Include="Views\Dialogs\Notice1.Designer.vb">
       <DependentUpon>Notice1.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\Notice1.vb">
+    <Compile Include="Views\Dialogs\Notice1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\OpenPort.Designer.vb">
+    <Compile Include="Views\Dialogs\OpenPort.Designer.vb">
       <DependentUpon>OpenPort.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\OpenPort.vb">
+    <Compile Include="Views\Dialogs\OpenPort.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\PassData.vb" />
-    <Compile Include="SN\PI.vb">
+    <Compile Include="Models\PassData.vb" />
+    <Compile Include="UI\Controls\PI.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\PrecisionTimer.vb" />
-    <Compile Include="SN\REhost.Designer.vb">
+    <Compile Include="Utils\PrecisionTimer.vb" />
+    <Compile Include="Views\Main\REhost.Designer.vb">
       <DependentUpon>REhost.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\REhost.vb">
+    <Compile Include="Views\Main\REhost.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\restPass.Designer.vb">
+    <Compile Include="Views\Dialogs\restPass.Designer.vb">
       <DependentUpon>restPass.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\restPass.vb">
+    <Compile Include="Views\Dialogs\restPass.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\RoundRectangle.vb" />
-    <Compile Include="SN\SelectPort.Designer.vb">
+    <Compile Include="UI\Rendering\RoundRectangle.vb" />
+    <Compile Include="Views\Dialogs\SelectPort.Designer.vb">
       <DependentUpon>SelectPort.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\SelectPort.vb">
+    <Compile Include="Views\Dialogs\SelectPort.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\SMSManager.Designer.vb">
+    <Compile Include="Views\Features\SMSManager.Designer.vb">
       <DependentUpon>SMSManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\SMSManager.vb">
+    <Compile Include="Views\Features\SMSManager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\Sockets.SpyNote.Client\SocketClient.vb" />
-    <Compile Include="SN\Sockets.SpyNote.Server\SocketServer.vb" />
-    <Compile Include="SN\Spell.Designer.vb">
+    <Compile Include="Network\Sockets.SpyNote.Client\SocketClient.vb" />
+    <Compile Include="Network\Sockets.SpyNote.Server\SocketServer.vb" />
+    <Compile Include="Views\Dialogs\Spell.Designer.vb">
       <DependentUpon>Spell.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\Spell.vb">
+    <Compile Include="Views\Dialogs\Spell.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\SpyNote.Stores\ContextGriedView.vb" />
-    <Compile Include="SN\SpyNote.Stores\ContextRicBox.vb" />
-    <Compile Include="SN\SpyNote.Stores\ContextTextView.vb" />
-    <Compile Include="SN\SpyNote.Stores\CPU.vb" />
-    <Compile Include="SN\SpyNote.Stores\libIcons.vb" />
-    <Compile Include="SN\SpyNote.Stores\NetworkBandwidth.vb" />
-    <Compile Include="SN\SpyNote.Stores\SampleAudioAPI.vb" />
-    <Compile Include="SN\SpyNote.Stores\Store.vb" />
-    <Compile Include="SN\SPYXml\XMLSettings.vb" />
-    <Compile Include="SN\Terminal.Designer.vb">
+    <Compile Include="Stores\SpyNote.Stores\ContextGriedView.vb" />
+    <Compile Include="Stores\SpyNote.Stores\ContextRicBox.vb" />
+    <Compile Include="Stores\SpyNote.Stores\ContextTextView.vb" />
+    <Compile Include="Stores\SpyNote.Stores\CPU.vb" />
+    <Compile Include="Stores\SpyNote.Stores\libIcons.vb" />
+    <Compile Include="Stores\SpyNote.Stores\NetworkBandwidth.vb" />
+    <Compile Include="Stores\SpyNote.Stores\SampleAudioAPI.vb" />
+    <Compile Include="Stores\SpyNote.Stores\Store.vb" />
+    <Compile Include="XML\SPYXml\XMLSettings.vb" />
+    <Compile Include="Views\Features\Terminal.Designer.vb">
       <DependentUpon>Terminal.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\Terminal.vb">
+    <Compile Include="Views\Features\Terminal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\Testconnection.Designer.vb">
+    <Compile Include="Views\Dialogs\Testconnection.Designer.vb">
       <DependentUpon>Testconnection.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\Testconnection.vb">
+    <Compile Include="Views\Dialogs\Testconnection.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SN\ThemeBtnBar.vb">
+    <Compile Include="UI\Controls\ThemeBtnBar.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeButton.vb">
+    <Compile Include="UI\Controls\ThemeButton.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeButtonImge.vb">
+    <Compile Include="UI\Controls\ThemeButtonImge.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeChDown.vb">
+    <Compile Include="UI\Controls\ThemeChDown.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeCoBox.vb">
+    <Compile Include="UI\Controls\ThemeCoBox.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeContainer546546.vb">
+    <Compile Include="UI\Controls\ThemeContainer546546.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeControl.vb">
+    <Compile Include="UI\Controls\ThemeControl.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeControl0.vb">
+    <Compile Include="UI\Controls\ThemeControl0.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeProgressBar.vb">
+    <Compile Include="UI\Controls\ThemeProgressBar.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeSeparator.vb">
+    <Compile Include="UI\Controls\ThemeSeparator.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeShare46546.vb" />
-    <Compile Include="SN\ThemeTabControl.vb">
+    <Compile Include="UI\Controls\ThemeShare46546.vb" />
+    <Compile Include="UI\Controls\ThemeTabControl.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeTextBox.vb">
+    <Compile Include="UI\Controls\ThemeTextBox.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeTit.vb">
+    <Compile Include="UI\Controls\ThemeTit.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\ThemeToolStrip.vb" />
-    <Compile Include="SN\ThemeToolStripCmbx.vb" />
-    <Compile Include="SN\ToolTip_0.vb">
+    <Compile Include="UI\Controls\ThemeToolStrip.vb" />
+    <Compile Include="UI\Controls\ThemeToolStripCmbx.vb" />
+    <Compile Include="UI\Controls\ToolTip_0.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\Track.vb">
+    <Compile Include="UI\Controls\Track.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\VisualStudioHorizontalScrollBar.vb">
+    <Compile Include="UI\Controls\VisualStudioHorizontalScrollBar.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\VisualStudioVerticalScrollBar.vb">
+    <Compile Include="UI\Controls\VisualStudioVerticalScrollBar.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SN\WindowsApi.vb" />
-    <Compile Include="SN\ZipFiles.Designer.vb">
+    <Compile Include="Utils\WindowsApi.vb" />
+    <Compile Include="Views\Features\ZipFiles.Designer.vb">
       <DependentUpon>ZipFiles.vb</DependentUpon>
     </Compile>
-    <Compile Include="SN\ZipFiles.vb">
+    <Compile Include="Views\Features\ZipFiles.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -411,115 +411,115 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\AboutSpyNote.resx">
+    <EmbeddedResource Include="Views\Main\AboutSpyNote.resx">
       <DependentUpon>AboutSpyNote.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\AccountManager.resx">
+    <EmbeddedResource Include="Views\Features\AccountManager.resx">
       <DependentUpon>AccountManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\AddFiles.resx">
+    <EmbeddedResource Include="Views\Dialogs\AddFiles.resx">
       <DependentUpon>AddFiles.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\Apps.resx">
+    <EmbeddedResource Include="Views\Features\Apps.resx">
       <DependentUpon>Apps.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\aProperties.resx">
+    <EmbeddedResource Include="Views\Dialogs\aProperties.resx">
       <DependentUpon>aProperties.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\Build.resx">
+    <EmbeddedResource Include="Views\Features\Build.resx">
       <DependentUpon>Build.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\CallPhone.resx">
+    <EmbeddedResource Include="Views\Features\CallPhone.resx">
       <DependentUpon>CallPhone.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\CallsManager.resx">
+    <EmbeddedResource Include="Views\Features\CallsManager.resx">
       <DependentUpon>CallsManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\CameraManager.resx">
+    <EmbeddedResource Include="Views\Features\CameraManager.resx">
       <DependentUpon>CameraManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\Chat.resx">
+    <EmbeddedResource Include="Views\Features\Chat.resx">
       <DependentUpon>Chat.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\ContactsManager.resx">
+    <EmbeddedResource Include="Views\Features\ContactsManager.resx">
       <DependentUpon>ContactsManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\ContactsWrite.resx">
+    <EmbeddedResource Include="Views\Features\ContactsWrite.resx">
       <DependentUpon>ContactsWrite.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\devices.resx">
+    <EmbeddedResource Include="Views\Features\devices.resx">
       <DependentUpon>devices.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\DownloadManager.resx">
+    <EmbeddedResource Include="Views\Features\DownloadManager.resx">
       <DependentUpon>DownloadManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\FileBox.resx">
+    <EmbeddedResource Include="Views\Features\FileBox.resx">
       <DependentUpon>FileBox.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\File_Manager.resx">
+    <EmbeddedResource Include="Views\Features\File_Manager.resx">
       <DependentUpon>File_Manager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\fOptions.resx">
+    <EmbeddedResource Include="Views\Dialogs\fOptions.resx">
       <DependentUpon>fOptions.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\FSettings.resx">
+    <EmbeddedResource Include="Views\Dialogs\FSettings.resx">
       <DependentUpon>FSettings.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\FUN.resx">
+    <EmbeddedResource Include="Views\Features\FUN.resx">
       <DependentUpon>FUN.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\JV.resx">
+    <EmbeddedResource Include="Views\Features\JV.resx">
       <DependentUpon>JV.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\key_logger.resx">
+    <EmbeddedResource Include="Views\Features\key_logger.resx">
       <DependentUpon>key_logger.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\LocationManager.resx">
+    <EmbeddedResource Include="Views\Features\LocationManager.resx">
       <DependentUpon>LocationManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\LogoSN.resx">
+    <EmbeddedResource Include="Views\Dialogs\LogoSN.resx">
       <DependentUpon>LogoSN.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\MainSpyNote.resx">
+    <EmbeddedResource Include="Views\Main\MainSpyNote.resx">
       <DependentUpon>MainSpyNote.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\Microphone.resx">
+    <EmbeddedResource Include="Views\Features\Microphone.resx">
       <DependentUpon>Microphone.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\NameChat.resx">
+    <EmbeddedResource Include="Views\Features\NameChat.resx">
       <DependentUpon>NameChat.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\Notepad.resx">
+    <EmbeddedResource Include="Views\Features\Notepad.resx">
       <DependentUpon>Notepad.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\Notice1.resx">
+    <EmbeddedResource Include="Views\Dialogs\Notice1.resx">
       <DependentUpon>Notice1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\OpenPort.resx">
+    <EmbeddedResource Include="Views\Dialogs\OpenPort.resx">
       <DependentUpon>OpenPort.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\REhost.resx">
+    <EmbeddedResource Include="Views\Main\REhost.resx">
       <DependentUpon>REhost.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\restPass.resx">
+    <EmbeddedResource Include="Views\Dialogs\restPass.resx">
       <DependentUpon>restPass.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\SelectPort.resx">
+    <EmbeddedResource Include="Views\Dialogs\SelectPort.resx">
       <DependentUpon>SelectPort.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\SMSManager.resx">
+    <EmbeddedResource Include="Views\Features\SMSManager.resx">
       <DependentUpon>SMSManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\Spell.resx">
+    <EmbeddedResource Include="Views\Dialogs\Spell.resx">
       <DependentUpon>Spell.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\Terminal.resx">
+    <EmbeddedResource Include="Views\Features\Terminal.resx">
       <DependentUpon>Terminal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\Testconnection.resx">
+    <EmbeddedResource Include="Views\Dialogs\Testconnection.resx">
       <DependentUpon>Testconnection.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SN\ZipFiles.resx">
+    <EmbeddedResource Include="Views\Features\ZipFiles.resx">
       <DependentUpon>ZipFiles.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
